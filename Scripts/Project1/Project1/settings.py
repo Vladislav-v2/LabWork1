@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'application3_1.apps.Application31Config',
+    'application4.apps.Application4Config',
     'application3.apps.Application3Config',
     'application2.apps.Application2Config',
     'application1.apps.Application1Config',
