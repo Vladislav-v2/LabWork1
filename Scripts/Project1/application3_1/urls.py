@@ -8,4 +8,5 @@ urlpatterns = [
     path('',views.ShowAppsName),
     path('user/',views.index),
     path('condition/',views.view),
+
 ]
