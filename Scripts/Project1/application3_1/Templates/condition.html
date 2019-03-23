@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Користувач</th>
+        <td>Ви зайшли як: {% if current_user == "admin" %} {{current_user}} {% else %}user{% endif %}</td>
+    </tr>
+    <tr>
+        <th>Активність</th>
+        <td>{%if days%}{{days}}{%endif%}</td>
+    </tr>
+    <tr>
+        <th>День тижня</th>
+        <td>{%if day == "1"%}Понеділок {%endif%}
+            {%if day == "2"%}Вівторок {%endif%}
+            {%if day == "3"%}Середа {%endif%}
+            {%if day == "4"%}Четвер {%endif%}
+            {%if day == "5"%}П'ятниця {%endif%}
+            {%if day == "6"%}Субота {%endif%}
+            {%if day == "7"%}Неділя {%endif%}
+        </td>
+    </tr>
+    <tr>
+        <th>Робочі дні</th>
+        <td>{%if day > "5" %}Робочий {%else%} Вихідний {%endif%}</td>
+    </tr>
+    <tr>
+        <th>Статус</th>
+        <td>{%if status == "online" %} <font class="green"> Активний </font>{%else%} Офлайн {%endif%}</td>
+    </tr>
+    <tr>
+        <th>Додатково</th>
+        <td>{%if "gmail.com" in email  %} YouTube <br> Google Maps <br> Google Drive
+            <br> Google Translate <br>GMail <br> Google Forms <br> Google Docs {%else%} - {%endif%}</td>
+    </tr>
+</table>
+
+<ul>
+    <li><a href="menu.html">Condition</a></li>
+</ul>
+
+<style>
+    .green {
+        color: green;
+    }
+</style>
+</body>
+</html>

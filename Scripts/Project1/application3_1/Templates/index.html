@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USER</title>
+</head>
+<body>
+<h1> Templates_APP</h1>
+<h2>Variables:</h2>
+<ol class = "Variables">
+    <li>Years : {{job_year.2}}</li>
+    <li>Name : {{name}}</li>
+    <li> Lastname : {{lastname}}</li>
+    <li>Nickname : {{contact.nickname|capfirst}}</li>
+    <li>Контракт діє до : {{job_year.2|add:"5"}}</li>
+
+    <li>{% now "SHORT_DATE_FORMAT" %}</li>
+    <!--<li>{{datetime|date:"SHORT_DATE_FORMAT"}}</li>-->
+
+    <li>Початок роботи : {{job_year.0}}</li>
+    <li>Код-{{contact.phone|slice:":3"}}  Тел- {{contact.phone|slice:"3::1"}}</li>
+</ol>
+
+</body>
+</html>
