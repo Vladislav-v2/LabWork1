@@ -32,3 +32,11 @@ def view(request):
         "email": "vlad@gmail.com"
     }
     return render(request,"condition.html",context)
+def menu(request):
+    return render(request,"menu.html")
+def ShowMain(request):
+    return render(request,"main.html")
+def ShowContent(request):
+    return render(request, "Content.html")
+def ShowWrapper(request):
+    return render(request,"wrapper.html")
