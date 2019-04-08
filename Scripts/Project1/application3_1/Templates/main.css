@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 1600px;
+    height: 1950px;
+    background:lightcyan;
+}
+header {
+    height: 300px;
+    width: 1600px;
+    background: deepskyblue;
+}
+section{
+   background: yellow;
+    height: 250px;
+    width: 1000px;
+
+}
+aside{
+    background: red;
+    height: 250px;
+    width: 600px;
+    margin-left: 1000px;
+}
+footer{
+    height: 200px;
+    width: 1600px;
+    background:deepskyblue;
+}

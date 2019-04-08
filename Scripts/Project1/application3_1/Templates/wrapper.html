@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title </title>
+</head>
+<body>
+<header>
+    <p>header</p>
+</header>
+<section>
+    {% block content %}
+        Шаблон головної сторінки
+    {% endblock %}
+    </section><aside>Aside</aside>
+
+<footer>
+    <p>footer</p>
+</footer>
+
+
+<style>
+    *{
+     padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+    padding: 0;
+    margin: 0;
+    width: 1600px;
+    height: 1950px;
+    background:lightcyan;
+}
+header {
+    height: 300px;
+    width: 1600px;
+    background: deepskyblue;
+}
+section{
+    display:inline-block;
+    background: yellow;
+    height: 250px;
+    width: 67%;
+
+}
+aside{
+      display:inline-block;
+    background: red;
+    height: 250px;
+    width: 33%;
+}
+footer{
+    height: 200px;
+    width: 1600px;
+    background:deepskyblue;
+}
+
+</style>
+</body>
+</html>

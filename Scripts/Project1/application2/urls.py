@@ -23,7 +23,7 @@ urlpatterns = [
     re_path(r'^product/$',views.prd),
     re_path(r'^product/(?P<number>[\d]{3,4})/$', views.ThisYear),
     re_path(r'^product/(?P<year>[\d]{3,4})/(?P<month>[0-9]{2})/$',views.day_archive),
-    #re_path(r'^item/(?P<year>[\d]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]{2})/$', views.day_archive, name='none'),
+    re_path(r'^item/(?P<year>[\d]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]{2})/$', views.day_archive, name='none'),
 
     url(r'^(?P<str>[\w]*)/$', views.long_string),
     re_path(r'^folder/product(?P<number>[\d]{1,})/$', views.SelectFolder),
