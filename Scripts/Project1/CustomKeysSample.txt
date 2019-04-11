@@ -1,0 +1,2697 @@
+﻿п»ї//////////////////////////////////////////////////////
+//Этот файл включает в себя всплывающие подсказки 
+//и "горячие" клавиши для всех войск, усовершенствований, зданий,
+//героев и способностей, доступных четырем основным сторонам.
+//Инструкции см. в файле CustomKeyInfo.txt.
+//////////////////////////////////////////////////////
+
+
+/////////////////////////////
+//Общие команды
+/////////////////////////////
+
+//Двигаться
+[CmdMove]
+Tip=Двигаться (|cffffcc00M|r)
+Hotkey=M
+
+//Атаковать
+[CmdAttack]
+Tip=Атаковать (|cffffcc00A|r)
+Hotkey=A
+
+//Стрелять по местности
+[CmdAttackGround]
+Tip=Стрелять по местности (|cffffcc00G|r)
+Hotkey=G
+
+//Построить (общая команда)
+[CmdBuild]
+Tip=Построить (|cffffcc00B|r)
+Hotkey=B
+
+//Построить (Альянс)
+[CmdBuildHuman]
+Tip=Построить (|cffffcc00B|r)
+Hotkey=B
+
+//Построить (Орда)
+[CmdBuildOrc]
+Tip=Построить (|cffffcc00B|r)
+Hotkey=B
+
+//Вырастить (Ночные эльфы)
+[CmdBuildNightElf]
+Tip=Вырастить (|cffffcc00B|r)
+Hotkey=B
+
+//Создать (Нежить)
+[CmdBuildUndead]
+Tip=Создать (|cffffcc00B|r)
+Hotkey=B
+
+//Отмена
+[CmdCancel]
+Tip=Отмена (|cffffcc00ESC|r)
+Hotkey=512
+
+//Отмена строительства
+[CmdCancelBuild]
+Tip=Отмена (|cffffcc00ESC|r)
+Hotkey=512
+
+//Отмена найма
+[CmdCancelTrain]
+Tip=Отмена (|cffffcc00ESC|r)
+Hotkey=512
+
+//Отмена воскрешения
+[CmdCancelRevive]
+Tip=Отмена (|cffffcc00ESC|r)
+Hotkey=512
+
+//Удерживать позицию
+[CmdHoldPos]
+Tip=Удерживать позицию (|cffffcc00H|r)
+Hotkey=H
+
+//Патрулировать
+[CmdPatrol]
+Tip=Патрулировать (|cffffcc00P|r)
+Hotkey=P
+
+//Сборный пункт
+[CmdRally]
+Tip=Сборный пункт (|cffffcc00Y|r)
+Hotkey=Y
+
+//Выбор способности
+[CmdSelectSkill]
+Tip=Способности (|cffffcc00O|r)
+Hotkey=O
+
+//Отставить
+[CmdStop]
+Tip=Отставить (|cffffcc00S|r)
+Hotkey=S
+
+//Добывать ресурсы (общая команда)
+[Ahar]
+Tip=Добывать ресурсы (|cffffcc00G|r)
+"Untip=""Доставить ресурсы (|cffffcc00E|r)"""
+Hotkey=G
+Unhotkey=E
+
+//Добывать ресурсы (вурдалак)
+[Ahrl]
+Tip=Добывать ресурсы (|cffffcc00G|r)
+"Untip=""Доставить ресурсы (|cffffcc00E|r)"""
+Hotkey=G
+Unhotkey=E
+
+// Ремонтировать (работник/раб)
+[Arep]
+Tip=Ремонтировать (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+// Выбор пользователя. Эта команда используется при торговле и т.п.
+[Anei]
+Tip=Выбор пользователя (|cffffcc00U|r)
+Hotkey=U
+
+// Взять на борт (дирижабль)
+[Aloa]
+Tip=Взять на борт (|cffffcc00L|r)
+Hotkey=L
+
+// Выгрузить всех (дирижабль)
+[Adro]
+Tip=Выгрузить всех (|cffffcc00U|r)
+Hotkey=U
+
+//Выгрузить всех (судно)
+[Sdro]
+Tip=Выгрузить всех (|cffffcc00U|r)
+Hotkey=U
+
+/////////////////////////////
+//Альянс - войска
+/////////////////////////////
+
+//Ястреб 
+[hdhw]
+Hotkey=D
+Tip=Ястреб (|cffffcc00D|r)
+
+//Огненное лассо
+[Amls]
+Tip=Огненное лассо (|cffffcc00E|r)
+Hotkey=E
+
+// Туман
+[Aclf]
+Tip=Туман (|cffffcc00C|r)
+Hotkey=C
+
+//Пехотинец
+[hfoo]
+Hotkey=F
+Tip=Пехотинец (|cffffcc00F|r)
+
+// Укрыться за щитом
+[Adef]
+Tip=Укрыться за щитом (|cffffcc00D|r)
+"Untip=""Опустить щит (|cffffcc00D|r)"""
+Hotkey=D
+Unhotkey=D
+
+//Вертолет
+[hgyr]
+Hotkey=F
+Tip=Вертолет (|cffffcc00F|r)
+
+//Рыцарь
+[hkni]
+Hotkey=K
+Tip=Рыцарь (|cffffcc00K|r)
+
+//Целитель
+[hmpr]
+Hotkey=P
+Tip=Целитель (|cffffcc00P|r)
+
+// Духовное пламя
+[Ainf]
+Tip=Духовное пламя (|cffffcc00F|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=F
+Unhotkey=F
+
+// Лечение
+[Ahea]
+Tip=Лечение (|cffffcc00E|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=E
+Unhotkey=E
+
+// Рассеять чары
+[Adis]
+Tip=Рассеять чары (|cffffcc00D|r)
+Hotkey=D
+
+//Орудийный расчет
+[hmtm]
+Hotkey=M
+Tip=Орудийный расчет (|cffffcc00M|r)
+
+// Осветительный заряд
+[Afla]
+Tip=Осветительный заряд (|cffffcc00F|r)
+Hotkey=F
+
+//Работник
+[hpea]
+Hotkey=P
+Tip=Работник (|cffffcc00P|r)
+
+// Вернуться к работе (один или несколько работников)
+[Amil]
+Tip=К оружию (|cffffcc00C|r)
+"Untip=""Вернуться к работе (|cffffcc00W|r)"""
+Hotkey=C
+Unhotkey=W
+
+// Вернуться к работе (все работники, собравшиеся в ратуше)
+[Amic]
+Tip=К оружию (|cffffcc00C|r)
+"Untip=""Вернуться к работе (|cffffcc00W|r)"""
+Hotkey=C
+Unhotkey=W
+
+//Стрелок
+[hrif]
+Hotkey=R
+Tip=Стрелок (|cffffcc00R|r)
+
+//Волшебница
+[hsor]
+Hotkey=S
+Tip=Волшебница (|cffffcc00S|r)
+
+// Замедление
+[Aslo]
+Tip=Замедление (|cffffcc00W|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=W
+Unhotkey=W
+
+// Полиморф
+[Aply]
+Tip=Полиморф (|cffffcc00O|r)
+Hotkey=O
+
+// Невидимость
+[Aivs]
+Tip=Невидимость (|cffffcc00I|r)
+Hotkey=I
+
+//Ведьмак
+[hspt]
+Hotkey=B
+Tip=Ведьмак (|cffffcc00B|r)
+
+// Похищение магии
+[Asps]
+Tip=Похищение магии (|cffffcc00T|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=T
+Unhotkey=T
+
+// Захват контроля
+[Acmg]
+Tip=Захват контроля (|cffffcc00C|r)
+Hotkey=C
+
+//Самоходная мортира (без ракет)
+[hmtt]
+Hotkey=E
+Tip=Самоходная мортира (|cffffcc00E|r)
+
+//Самоходная мортира (с ракетами)
+[hrtt]
+Hotkey=E
+Tip=Самоходная мортира (|cffffcc00E|r)
+
+//Грифон
+[hgry]
+Hotkey=G
+Tip=Грифон (|cffffcc00G|r)
+
+/////////////////////////////
+//Альянс - здания и усовершенствования
+/////////////////////////////
+
+//Захват контроля
+[Rhss]
+Tip=Захват контроля (|cffffcc00G|r)
+Hotkey=G
+
+//Железные мечи
+[Rhme]
+Tip=Железные мечи (|cffffcc00S|r),Стальные мечи (|cffffcc00S|r),Мифрильные мечи (|cffffcc00S|r)
+Hotkey=S,S,S
+
+//Пороховая смесь
+[Rhra]
+Tip=Пороховая смесь (|cffffcc00G|r),Черный порох (|cffffcc00G|r),Бездымный порох (|cffffcc00G|r)
+Hotkey=G,G,G
+
+//Железная броня
+[Rhar]
+Tip=Железная броня (|cffffcc00P|r),Стальная броня (|cffffcc00P|r),Мифрильная броня (|cffffcc00P|r)
+Hotkey=P,P,P
+
+//Клепаная кожа
+[Rhla]
+Tip=Клепаная кожа (|cffffcc00A|r),Армированная кожа (|cffffcc00A|r),Драконья кожа (|cffffcc00A|r)
+Hotkey=A,A,A
+
+//Обработка камней
+[Rhac]
+Tip=Обработка камней (|cffffcc00M|r),Строительный раствор (|cffffcc00M|r),Армированная кладка (|cffffcc00M|r)
+Hotkey=M,M,M
+
+//Авиабомбы
+[Rhgb]
+Tip=Авиабомбы (|cffffcc00B|r)
+Hotkey=B
+
+//Улучшенные топоры
+[Rhlh]
+Tip=Улучшенные топоры (|cffffcc00L|r),Улучшенные пилы (|cffffcc00L|r)
+Hotkey=L,L
+
+//Укрыться за щитом
+[Rhde]
+Tip=Укрыться за щитом (|cffffcc00D|r)
+Hotkey=D
+
+//Дрессировка животных
+[Rhan]
+Tip=Дрессировка животных (|cffffcc00A|r)
+Hotkey=A
+
+//Посвящение целителей
+[Rhpt]
+Tip=Посвящение целителей (|cffffcc00T|r),Высшее посвящение целителей (|cffffcc00T|r)
+Hotkey=T,T
+
+//Посвящение волшебниц 
+[Rhst]
+Tip=Посвящение волшебниц (|cffffcc00O|r),Высшее посвящение волшебниц (|cffffcc00O|r)
+Hotkey=O,O
+
+//Длинноствольные мушкеты
+[Rhri]
+Tip=Длинноствольные мушкеты (|cffffcc00L|r)
+Hotkey=L
+
+//Магический страж 
+[Rhse]
+Tip=Магический страж (|cffffcc00M|r)
+Hotkey=M
+
+//Осветительный заряд
+[Rhfl]
+Tip=Осветительный заряд (|cffffcc00R|r)
+Hotkey=R
+
+//Громовой молот
+[Rhhb]
+Tip=Громовой молот (|cffffcc00H|r)
+Hotkey=H
+
+//Паровой танк
+[Rhrt]
+Tip=Паровой танк (|cffffcc00E|r)
+Hotkey=G
+
+//Рюкзак
+[Rhpm]
+Tip=Рюкзак (|cffffcc00B|r)
+Hotkey=B
+
+//Разрывные снаряды
+[Rhfc]
+Tip=Разрывные снаряды (|cffffcc00C|r)
+Hotkey=C
+
+//Картечь
+[Rhfs]
+Tip=Картечь (|cffffcc00S|r)
+Hotkey=S
+
+//Туман
+[Rhcd]
+Tip=Туман (|cffffcc00C|r)
+Hotkey=C
+
+//Алтарь Королей 
+[halt]
+Hotkey=A
+Tip=Алтарь Королей (|cffffcc00A|r)
+
+//Мастерская
+[harm]
+Hotkey=W
+Tip=Мастерская (|cffffcc00W|r)
+
+//Храм Истины
+[hars]
+Hotkey=R
+Tip=Храм Истины (|cffffcc00R|r)
+
+//Казармы
+[hbar]
+Hotkey=B
+Tip=Казармы (|cffffcc00B|r)
+
+//Кузница
+[hbla]
+Hotkey=S
+Tip=Кузница (|cffffcc00S|r)
+
+//Замок
+[hcas]
+Hotkey=U
+Tip=Замок (|cffffcc00U|r)
+
+//Ферма
+[hhou]
+Hotkey=F
+Tip=Ферма (|cffffcc00F|r)
+
+//Башня грифонов
+[hgra]
+Hotkey=G
+Tip=Башня грифонов (|cffffcc00G|r)
+
+//Орудийная башня
+[hctw]
+Hotkey=C
+Tip=Орудийная башня (|cffffcc00C|r)
+
+//Сторожевая башня
+[hgtw]
+Hotkey=G
+Tip=Сторожевая башня (|cffffcc00G|r)
+
+//Башня
+[hwtw]
+Hotkey=T
+Tip=Башня (|cffffcc00T|r)
+
+//Магическая башня
+[hatw]
+Hotkey=N
+Tip=Магическая башня (|cffffcc00N|r)
+
+// Разведать
+[AHta]
+Tip=Разведать (|cffffcc00R|r)
+Hotkey=R
+
+//Магическая лавка
+[hvlt]
+Hotkey=V
+Tip=Магическая лавка (|cffffcc00V|r)
+
+//Лесопилка
+[hlum]
+Hotkey=L
+Tip=Лесопилка (|cffffcc00L|r)
+
+//Крепость
+[hkee]
+Hotkey=U
+Tip=Крепость (|cffffcc00U|r)
+
+//Ратуша
+[htow]
+Hotkey=H
+Tip=Ратуша (|cffffcc00H|r)
+
+
+/////////////////////////////
+//Альянс - герои
+/////////////////////////////
+
+//Чародей Крови
+[Hblm]
+Hotkey=B
+Tip=Чародей Крови (|cffffcc00B|r)
+Revivetip=Воскресить Чародея Крови (|cffffcc00B|r)
+Awakentip=Воскресить Чародей Крови (|cffffcc00B|r)
+
+// Похищение маны
+[AHdr]
+"Tip=""Похищение маны, [|cffffcc00Уровень 1|r] (|cffffcc00N|r)"",""Похищение маны, [|cffffcc00Уровень 2|r] (|cffffcc00N|r)"",""Похищение маны, [|cffffcc00Уровень 3|r] (|cffffcc00N|r)"""
+Hotkey=N
+"Researchtip=""Похищение маны, [|cffffcc00Уровень %d|r] (|cffffcc00N|r)"""
+Researchhotkey=N
+
+// Огненный столб
+[AHfs]
+"Tip=""Огненный столб, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Огненный столб, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Огненный столб, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Огненный столб, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Изгнание в астрал
+[AHbn]
+"Tip=""Изгнание в астрал, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Изгнание в астрал, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Изгнание в астрал, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+Hotkey=B
+"Researchtip=""Изгнание в астрал, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Феникс
+[AHpx]
+Tip=Феникс (|cffffcc00X|r)
+Hotkey=X
+Researchtip=Феникс (|cffffcc00X|r)
+Researchhotkey=X
+
+//Верховный маг
+[Hamg]
+Hotkey=A
+Tip=Верховный маг (|cffffcc00A|r)
+Revivetip=Воскресить Верховного мага (|cffffcc00A|r)
+Awakentip=Воскресить Верховного мага (|cffffcc00A|r)
+
+// Буран
+[AHbz]
+"Tip=""Буран, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Буран, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Буран, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+Hotkey=B
+"Researchtip=""Буран, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Дух Воды
+[AHwe]
+Tip=Summon |cffffcc00W|rater Elemental - [|cffffcc00Level 1|r],Summon |cffffcc00W|rater Elemental - [|cffffcc00Level 2|r],Summon |cffffcc00W|rater Elemental - [|cffffcc00Level 3|r] 
+"Researchtip=""Дух Воды, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Hotkey=W
+Researchhotkey=W
+
+// Чародейская аура
+[AHab]
+"Tip=""Чародейская аура, [|cffffcc00Уровень 1|r]"",""Чародейская аура, [|cffffcc00Уровень 2|r]"",""Чародейская аура, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Чародейская аура, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Массовая телепортация
+[AHmt]
+Tip=Массовая телепортация (|cffffcc00T|r)
+Hotkey=T
+"Researchtip=""Массовая телепортация (|cffffcc00T|r)"""
+Researchhotkey=T
+
+//Горный Король
+[Hmkg]
+Hotkey=M
+Tip=Горный Король (|cffffcc00M|r)
+Revivetip=Воскресить Горного Короля (|cffffcc00M|r)
+Awakentip=Воскресить Горного Короля (|cffffcc00M|r)
+
+// Молот бурь
+[AHtb]
+"Tip=""Молот бурь, [|cffffcc00Уровень 1|r] (|cffffcc00T|r)"",""Молот бурь, [|cffffcc00Уровень 2|r] (|cffffcc00T|r)"",""Молот бурь, [|cffffcc00Уровень 3|r] (|cffffcc00T|r)"""
+Hotkey=T
+"Researchtip=""Молот бурь, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Researchhotkey=T
+
+// Удар грома
+[AHtc]
+"Tip=""Удар грома, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Удар грома, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Удар грома, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Удар грома, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+// Сильный удар
+[AHbh]
+"Tip=""Сильный удар, [|cffffcc00Уровень 1|r]"",""Сильный удар, [|cffffcc00Уровень 2|r]"",""Сильный удар, [|cffffcc00Уровень 3|r]."""
+"Researchtip=""Сильный удар, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Мощь гор
+[AHav]
+Tip=Мощь гор (|cffffcc00V|r)
+"Untip=""Развеять Мощь гор (|cffffcc00V|r)"""
+Hotkey=V
+Unhotkey=V
+"Researchtip=""Мощь гор (|cffffcc00V|r)"""
+Researchhotkey=V
+
+//Паладин
+[Hpal]
+Hotkey=L
+Tip=Паладин (|cffffcc00L|r)
+Revivetip=Воскресить паладина (|cffffcc00L|r)
+Awakentip=Воскресить паладина (|cffffcc00L|r)
+
+// Благодать
+[AHhb]
+"Tip=""Благодать, [|cffffcc00Уровень 1|r] (|cffffcc00T|r)"",""Благодать, [|cffffcc00Уровень 2|r] (|cffffcc00T|r)"",""Благодать, [|cffffcc00Уровень 3|r] (|cffffcc00T|r)"""
+Hotkey=T
+"Researchtip=""Благодать, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Researchhotkey=T
+
+// Божественный щит
+[AHds]
+"Tip=""Божественный щит, [|cffffcc00Уровень 1|r] (|cffffcc00D|r)"",""Божественный щит, [|cffffcc00Уровень 1|r] (|cffffcc00D|r)"",""Божественный щит, [|cffffcc00Уровень 3|r] (|cffffcc00D|r)"""
+"Untip=""Развеять Божественный щит (|cffffcc00D|r)"""
+Hotkey=D
+Unhotkey=D
+"Researchtip=""Божественный щит, [|cffffcc00Уровень %d|r] (|cffffcc00D|r)"""
+Researchhotkey=D
+
+//Доспехи веры
+[AHad]
+"Tip=""Доспехи веры, [|cffffcc00Уровень 1|r]"",""Доспехи веры, [|cffffcc00Уровень 2|r]"",""Доспехи веры, [|cffffcc00Уровень 3|r]."""
+"Researchtip=""Доспехи веры, [|cffffcc00Уровень %d|r] (|cffffcc00V|r)"""
+Researchhotkey=V
+
+// Воскрешение
+[AHre]
+Tip=|cffffcc00R|resurrectionHotkey=R
+"Researchtip=""Воскрешение (|cffffcc00R|r)"""
+Researchhotkey=R
+
+
+/////////////////////////////
+//Орда - войска
+/////////////////////////////
+
+//Катапульта
+[ocat]
+Hotkey=D
+Tip=Катапульта (|cffffcc00D|r)
+
+//Тролль-знахарь
+[odoc]
+Hotkey=W
+Tip=Тролль-знахарь (|cffffcc00W|r)
+
+//Невидимый страж
+[Aeye]
+Tip=Невидимый страж (|cffffcc00W|r)
+Hotkey=W
+
+//Колдовская ловушка
+[Asta]
+Tip=Колдовская ловушка (|cffffcc00T|r)
+Hotkey=T
+
+//Дух-целитель
+[Ahwd]
+Tip=Дух-целитель (|cffffcc00E|r)
+Hotkey=E
+
+//Бугай
+[ogru]
+Hotkey=G
+Tip=Бугай (|cffffcc00G|r)
+
+//Охотник за головами
+[ohun]
+Hotkey=T
+Tip=Охотник за головами (|cffffcc00T|r)
+
+//Берсерк
+[otbk]
+Hotkey=T
+Tip=Берсерк (|cffffcc00T|r)
+
+// Безумие
+[Absk]
+"Tip=""Безумие (|cffffcc00B|r)"""
+Hotkey=B
+
+//Кодой
+[okod]
+Hotkey=K
+Tip=Кодой (|cffffcc00K|r)
+
+//Проглотить
+[Adev]
+Tip=Проглотить (|cffffcc00D|r)
+Hotkey=D
+
+//Раб
+[opeo]
+Hotkey=P
+Tip=Раб (|cffffcc00P|r)
+
+//Волчий всадник
+[orai]
+Hotkey=R
+Tip=Волчий всадник (|cffffcc00R|r)
+
+//Ловчий
+[Aens]
+Tip=Ловчий (|cffffcc00E|r)
+Hotkey=E
+
+//Шаман
+[oshm]
+Hotkey=S
+Tip=Шаман (|cffffcc00S|r)
+
+//Очищение
+[Aprg]
+Tip=Очищение (|cffffcc00G|r)
+Hotkey=G
+
+//Кровожадность
+[Ablo]
+Tip=Кровожадность (|cffffcc00B|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=B
+Unhotkey=B
+
+
+//Щит молний
+[Alsh]
+Tip=Щит молний (|cffffcc00L|r)
+Hotkey=L
+
+//Минотавр
+[otau]
+Hotkey=T
+Tip=Минотавр (|cffffcc00T|r)
+
+//Нетопырь
+[otbr]
+Hotkey=B
+Tip=Нетопырь (|cffffcc00B|r)
+
+//Самоубийство
+[Auco]
+"Tip=""Самоубийство (|cffffcc00C|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=C
+Unhotkey=C
+
+
+//Виверна
+[owyv]
+Hotkey=W
+Tip=Виверна (|cffffcc00W|r)
+
+//Служитель Предков
+[ospm]
+Hotkey=T
+Tip=Служитель Предков (|cffffcc00T|r)
+
+//Помощь предков
+[Aast]
+"Tip=""Помощь предков (|cffffcc00C|r)"""
+Hotkey=C
+
+//Копье духов (новое)
+[Adcn]
+"Tip=""Копье духов (|cffffcc00D|r)"""
+Hotkey=D
+
+//Материальный мир
+[Acpf]
+"Tip=""Материальный мир (|cffffcc00F|r)"""
+"Untip=""Мир духов (|cffffcc00F|r)"""
+Hotkey=F
+Unhotkey=F
+
+//Мир духов
+[Aetf]
+"Tip=""Мир духов (|cffffcc00F|r)"""
+"Untip=""Материальный мир (|cffffcc00F|r)"""
+Hotkey=F
+Unhotkey=F
+
+//Эмпатия
+[Aspl]
+"Tip=""Эмпатия (|cffffcc00R|r)"""
+Hotkey=R
+
+
+/////////////////////////////
+//Орда - здания и усовершенствования
+/////////////////////////////
+
+//Железное оружие ближнего боя
+[Rome]
+Tip=Железное оружие ближнего боя (|cffffcc00M|r),Стальное оружие ближнего боя (|cffffcc00M|r),Арканитовое оружие ближнего боя (|cffffcc00M|r)
+Hotkey=M,M,M
+
+//Железное метательное оружие
+[Rora]
+Tip=Железное метательное оружие (|cffffcc00R|r),Cтальное метательное оружие (|cffffcc00R|r),Арканитовое метательное оружие (|cffffcc00R|r) 
+Hotkey=R,R,R
+
+//Железная броня
+[Roar]
+Tip=Железная броня (|cffffcc00A|r),Стальная броня (|cffffcc00A|r),Арканитовая броня (|cffffcc00A|r)
+Hotkey=A,A,A
+
+//Марш Орды
+[Rwdm]
+Tip=Марш Орды (|cffffcc00D|r)
+Hotkey=D
+
+//Грабеж
+[Ropg]
+Tip=Грабеж (|cffffcc00G|r)
+Hotkey=G
+
+//Ярость берсерка
+[Robs]
+Tip=Ярость берсерка (|cffffcc00B|r)
+Hotkey=B
+
+//Сокрушение
+[Rows]
+Tip=Сокрушение (|cffffcc00P|r)
+Hotkey=P
+
+//Ловчий
+[Roen]
+Tip=Ловчий (|cffffcc00N|r)
+Hotkey=N
+
+//Отравленное оружие
+[Rovs]
+Tip=Отравленное оружие (|cffffcc00E|r)
+Hotkey=E
+
+//Посвящение знахарей
+[Rowd]
+Tip=Посвящение знахарей (|cffffcc00D|r),Высшее посвящение знахарей (|cffffcc00D|r)
+Hotkey=D,D
+
+//Посвящение шаманов
+[Rost]
+Tip=Посвящение шаманов (|cffffcc00M|r),Высшее посвящение шаманов (|cffffcc00M|r)
+Hotkey=M,M
+
+//Шипы
+[Rosp]
+Tip=Шипы (|cffffcc00S|r), Острые шипы (|cffffcc00S|r), Ядовитые шипы (|cffffcc00S|r)
+Hotkey=S,S,S
+
+//Сила духа
+[Rotr]
+"Tip=""Сила духа (|cffffcc00R|r),"",""Сила духа (уровень 2, |cffffcc00R|r)"",""Сила духа, (уровень 3, |cffffcc00R|r)"""
+Hotkey=R
+
+//Жидкий огонь
+[Rolf]
+Tip=Жидкий огонь (|cffffcc00L|r)
+Hotkey=L
+
+//Рюкзак (Орда)
+[Ropm]
+Tip=Рюкзак (|cffffcc00B|r)
+Hotkey=B
+
+//Посвящение Предков
+[Rowt]
+Tip=Посвящение Предков (|cffffcc00R|r),Высшее посвящение Предков (|cffffcc00R|r)
+Hotkey=R,R
+
+//Берсерк
+[Robk]
+Tip=Берсерк (|cffffcc00E|r)
+Hotkey=E
+
+//Фортификация
+[Rorb]
+Tip=Фортификация (|Cffffcc00D|r)
+Hotkey=D
+
+//Горючая смесь
+[Robf]
+Tip=Горючая смесь (|cffffcc00N|r)
+Hotkey=N
+
+//Алтарь Бури
+[oalt]
+Hotkey=A
+Tip=Алтарь Бури (|cffffcc00A|r)
+
+//Казармы
+[obar]
+Hotkey=B
+Tip=Казармы (|cffffcc00B|r)
+
+//Зверинец
+[obea]
+Hotkey=E
+Tip=Зверинец (|cffffcc00E|r)
+
+//Лесопилка 
+[ofor]
+Hotkey=M
+Tip=Лесопилка (|cffffcc00M|r)
+
+//Дворец Вождей
+[ofrt]
+Hotkey=U
+Tip=Дворец Вождей (|cffffcc00U|r)
+
+//Дом Вождей
+[ogre]
+Hotkey=H
+Tip=Дом Вождей (|cffffcc00H|r)
+
+//Обитель Духов
+[osld]
+Hotkey=S
+Tip=Обитель Духов (|cffffcc00S|r)
+
+//Крепость Вождей
+[ostr]
+Hotkey=U
+Tip=Крепость Вождей (|cffffcc00U|r)
+
+//Логово орков
+[otrb]
+Hotkey=O
+Tip=Логово орков (|cffffcc00O|r)
+
+//Боевая тревога
+[Abtl]
+Tip=Боевая тревога (|cffffcc00B|r)
+Hotkey=B
+
+//Вернуться к работе 
+[Astd]
+Tip=Вернуться к работе (|cffffcc00D|r)
+Hotkey=D
+
+//Укрепленное логово
+[orbr]
+Hotkey=O
+Tip=Укрепленное логово (|cffffcc00O|r)
+
+//Тотем минотавра
+[otto]
+Hotkey=T
+Tip=Тотем минотавра (|cffffcc00T|r)
+
+//Лавка знахаря
+[ovln]
+Hotkey=V
+Tip=Лавка знахаря (|cffffcc00V|r)
+
+//Сторожевая башня
+[owtw]
+Hotkey=W
+Tip=Сторожевая башня (|cffffcc00W|r)
+
+
+/////////////////////////////
+//Орда - герои
+/////////////////////////////
+
+[Obla]
+Hotkey=B
+Tip=Мастер Клинка (|cffffcc00B|r)
+Revivetip=Воскресить Мастера Клинка (|cffffcc00B|r)
+Awakentip=Воскресить Мастера Клинка (|cffffcc00B|r)
+
+//Стремительность
+[AOwk]
+"Tip=""Стремительность, [|cffffcc00Уровень 1|r] (|cffffcc00W|r)"",""Стремительность, [|cffffcc00Уровень 2|r] (|cffffcc00W|r)"",""Стремительность, [|cffffcc00Уровень 3|r] (|cffffcc00W|r)"""
+Hotkey=W
+"Researchtip=""Стремительность, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Researchhotkey=W
+
+//Смертельный удар
+[AOcr]
+"Tip=""Смертельный удар, [|cffffcc00Уровень 1|r]"",""Смертельный удар, [|cffffcc00Уровень 2|r]"",""Смертельный удар, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Смертельный удар, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+//Иллюзия
+[AOmi]
+"Tip=""Иллюзия, [|cffffcc00Уровень 1|r] (|cffffcc00R|r)"",""Иллюзия, [|cffffcc00Уровень 2|r] (|cffffcc00R|r)"",""Иллюзия, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)"""
+Hotkey=R
+"Researchtip=""Иллюзия, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+//Стальной вихрь
+[AOww]
+Tip=Стальной вихрь (|cffffcc00B|r)
+Hotkey=B
+"Researchtip=""Стальной вихрь (|cffffcc00B|r)"""
+Researchhotkey=B
+
+[Ofar]
+Hotkey=F
+Tip=Говорящий с Духами (|cffffcc00F|r)
+Revivetip=Воскресить Говорящего с Духами (|cffffcc00F|r)
+Awakentip=Воскресить Говорящего с Духами (|cffffcc00F|r)
+
+//Цепь молний
+[AOcl]
+"Tip=""Цепь молний, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Цепь молний, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Цепь молний, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Цепь молний, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+//Духовное око
+[AOfs]
+"Tip=""Духовное око, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Духовное око, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Духовное око, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Духовное око, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Дух волка
+[AOsf]
+"Tip=""Дух волка, [|cffffcc00Уровень 1|r] (|cffffcc00T|r)"",""Дух волка, [|cffffcc00Уровень 2|r] (|cffffcc00T|r)"",""Дух волка, [|cffffcc00Уровень 3|r] (|cffffcc00T|r)"""
+"Researchtip=""Дух волка, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Hotkey=T
+Researchhotkey=T
+
+//Землетрясение
+[AOeq]
+Tip=Землетрясение (|cffffcc00E|r)
+Hotkey=E
+"Researchtip=""Землетрясение (|cffffcc00E|r)"""
+Researchhotkey=E
+
+[Oshd]
+Hotkey=H
+Tip=Ловец Духов (|cffffcc00H|r)
+Revivetip=Воскресить Ловца Духов (|cffffcc00H|r)
+Awakentip=Воскресить Ловца Духов (|cffffcc00H|r)
+
+//Целительная волна
+[AOhw]
+"Tip=""Целительная волна, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Целительная волна, [|cffffcc00Уровень 2|r] (|cffffcc00E|r)"",""Целительная волна, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Целительная волна, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Сторожевая змея
+[AOsw]
+"Tip=""Сторожевая змея, [|cffffcc00Уровень 1|r] (|cffffcc00W|r)"",""Сторожевая змея, [|cffffcc00Уровень 2|r] (|cffffcc00W|r)"",""Сторожевая змея, [|cffffcc00Уровень 3|r] (|cffffcc00W|r)"""
+Hotkey=W
+"Researchtip=""Сторожевая змея, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Researchhotkey=W
+
+//Сглаз
+[AOhx]
+"Tip=""Сглаз, [|cffffcc00Уровень 1|r] (|cffffcc00X|r)"",""Сглаз, [|cffffcc00Уровень 2|r] (|cffffcc00X|r)"",""Сглаз, [|cffffcc00Уровень 3|r] (|cffffcc00X|r)"""
+Hotkey=X
+"Researchtip=""Сглаз, [|cffffcc00Уровень %d|r] (|cffffcc00X|r)"""
+Researchhotkey=X
+
+//Заговор Неуязвимости
+[AOvd]
+Tip=Заговор Неуязвимости (|cffffcc00V|r)
+Hotkey=V
+"Researchtip=""Заговор Неуязвимости (|cffffcc00V|r)"""
+Researchhotkey=V
+
+[Otch]
+Hotkey=T
+Tip=Вождь минотавров (|cffffcc00T|r)
+Revivetip=Воскресить вождя минотавров (|cffffcc00T|r)
+Awakentip=Воскресить вождя минотавров (|cffffcc00T|r)
+
+
+//Волна Силы
+[AOsh]
+"Tip=""Волна Силы, [|cffffcc00Уровень 1|r] (|cffffcc00W|r)"",""Волна Силы, [|cffffcc00Уровень 2|r] (|cffffcc00W|r)"",""Волна Силы, [|cffffcc00Уровень 3|r] (|cffffcc00W|r)"""
+Hotkey=W
+"Researchtip=""Волна Силы, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Researchhotkey=W
+
+//Аура выносливости
+[AOae]
+"Tip=""Аура выносливости, [|cffffcc00Уровень 1|r]"",""Аура выносливости, [|cffffcc00Уровень 2|r]"",""Аура выносливости, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Аура выносливости, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Громовая поступь (вождь минотавров)
+[AOws]
+"Tip=""Громовая поступь, [|cffffcc00Уровень 1|r] (|cffffcc00T|r)"",""Громовая поступь, [|cffffcc00Уровень 2|r] (|cffffcc00T|r)"",""Громовая поступь, [|cffffcc00Уровень 3|r] (|cffffcc00T|r)"""
+"Researchtip=""Громовая поступь, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Hotkey=T
+Researchhotkey=T
+
+//Перерождение
+[AOre]
+Tip=Перерождение
+Researchtip=Перерождение (|cffffcc00R|r)
+Researchhotkey=R
+
+
+/////////////////////////////
+//Ночные эльфы -  войска
+/////////////////////////////
+
+//Спрятаться
+[Ashm]
+Tip=Спрятаться (|cffffcc00I|r)
+Hotkey=I
+
+//Баллиста
+[ebal]
+Hotkey=T
+Tip=Баллиста (|cffffcc00T|r)
+
+//Химера
+[echm]
+Hotkey=C
+Tip=Химера (|cffffcc00C|r)
+
+//Друид-медведь
+[edoc]
+Hotkey=C
+Tip=Друид-медведь (|cffffcc00C|r)
+
+// Рев (в обличии ночного эльфа)
+[Aroa]
+Tip=Рев (|cffffcc00R|r)
+Hotkey=R
+
+//Омоложение
+[Arej]
+Tip=Омоложение (|cffffcc00E|r)
+Hotkey=E
+
+//Превратиться в медведя
+[Abrf]
+Tip=Превратиться в медведя (|cffffcc00F|r)
+Hotkey=F
+"Untip=""Превратиться в эльфа (|cffffcc00F|r)"""
+Unhotkey=F
+
+// Рев (в обличии медведя)
+[Ara2]
+Tip=Рев (|cffffcc00R|r)
+Hotkey=R
+
+//Друид-ворон
+[edot]
+Hotkey=T
+Tip=Друид-ворон (|cffffcc00T|r)
+
+//Волшебный огонь
+[Afae]
+Tip=Волшебный огонь (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//Смерч
+[Acyc]
+Tip=Смерч (|cffffcc00C|r)
+Hotkey=C
+
+//Превратиться в ворона
+[Arav]
+Tip=Превратиться в ворона (|cffffcc00F|r)
+Hotkey=F
+"Untip=""Превратиться в эльфа (|cffffcc00F|r)"""
+Unhotkey=F
+
+// Волшебный огонь (в обличии ворона)
+[Afa2]
+Tip=Волшебный огонь (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//Светлячок
+[ewsp]
+Hotkey=W
+Tip=Светлячок (|cffffcc00W|r)
+
+//Обновление
+[Aren]
+Tip=Обновление (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//Добывать ресурсы
+[Awha]
+Tip=Добывать ресурсы (|cffffcc00G|r)
+Hotkey=G
+
+//Самопожертвование
+[Adtn]
+Tip=Самопожертвование (|cffffcc00D|r)
+Hotkey=D
+
+//Охотница
+[esen]
+Hotkey=H
+Tip=Охотница (|cffffcc00H|r)
+
+//Сторожевая сова
+[Aesn]
+Tip=Сторожевая сова (|cffffcc00E|r)
+Hotkey=E
+
+//Лучница
+[earc]
+Hotkey=A
+Tip=Лучница (|cffffcc00A|r)
+
+//Оседлать гиппогрифа
+[Aco2]
+Tip=Оседлать гиппогрифа (|cffffcc00U|r)
+Hotkey=U
+
+//Расседлать гиппогрифа
+[Adec]
+Tip=Расседлать гиппогрифа (|cffffcc00U|r)
+Hotkey=U
+
+//Дриада
+[edry]
+Hotkey=D
+Tip=Дриада (|cffffcc00D|r)
+
+//Рассеять чары
+[Aadm]
+Tip=Рассеять чары (|cffffcc00B|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=B
+Unhotkey=B
+
+//Гиппогриф
+[ehip]
+Hotkey=H
+Tip=Гиппогриф (|cffffcc00H|r)
+
+//Посадить лучницу на спину
+[Aco3]
+Tip=Посадить лучницу на спину (|cffffcc00U|r)
+Hotkey=U
+
+//Горный великан
+[emtg]
+Hotkey=G
+Tip=Горный великан (|cffffcc00G|r)
+
+//Вырвать дерево
+[Agra]
+Tip=Вырвать дерево (|cffffcc00W|r)
+Hotkey=W
+
+//Оскорбление
+[Atau]
+Tip=Оскорбление (|cffffcc00T|r)
+Hotkey=T
+
+//Лесной дракончик
+[efdr]
+Hotkey=F
+Tip=Лесной дракончик (|cffffcc00F|r)
+
+//Заклинание Крови
+[Amfl]
+Tip=Заклинание Крови (|cffffcc00F|r)
+Untip=Развеять Заклинание Крови (|cffffcc00F|r)
+Hotkey=F
+Unhotkey=F
+
+//Бегство в астрал
+[Apsh]
+Tip=Бегство в астрал (|cffffcc00E|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=E
+Unhotkey=E
+
+
+////////////////////////////
+//Ночные эльфы - здания и усовершенствования
+////////////////////////////
+
+//Сила Луны
+[Resm]
+Tip=Сила Луны (|cffffcc00M|r),Могущество Луны (|cffffcc00M|r),Власть Луны (|cffffcc00M|r)
+Hotkey=M,M,M
+
+//Звериная сила
+[Resw]
+Tip=Звериная сила (|cffffcc00W|r),Звериная мощь (|cffffcc00W|r),Звериная ярость (|cffffcc00W|r)
+Hotkey=W,W,W
+
+//Лунный щит
+[Rema]
+Tip=Лунный щит (|cffffcc00A|r),Лунная кольчуга (|cffffcc00A|r),Лунный панцирь (|cffffcc00A|r)
+Hotkey=A,A,A
+
+//Толстые шкуры
+[Rerh]
+Tip=Толстые шкуры (|cffffcc00R|r),Прочные шкуры (|cffffcc00R|r),Непробиваемые шкуры (|cffffcc00R|r)
+Hotkey=R,R,R
+
+//Ночное зрение
+[Reuv]
+Tip=Ночное зрение (|cffffcc00U|r)
+Hotkey=U
+
+//Единение с природой
+[Renb]
+Tip=Единение с природой (|cffffcc00N|r)
+Hotkey=N
+
+//Волшебные луки
+[Reib]
+Tip=Волшебные луки (|cffffcc00I|R)
+Hotkey=I
+
+//Тренировка меткости
+[Remk]
+Tip=Тренировка меткости (|cffffcc00M|R)
+Hotkey=M
+
+//Сторожевая сова
+[Resc]
+Tip=Сторожевая сова (|cffffcc00S|r)
+Hotkey=S
+
+//Лунный чакрум
+[Remg]
+Tip=Лунный чакрум (|cffffcc00G|r)
+Hotkey=G
+
+//Посвящение друидов-воронов
+[Redt]
+Tip=Посвящение друидов-воронов (|cffffcc00A|r),Высшее посвящение друидов-воронов (|cffffcc00A|r)
+Hotkey=A,A
+
+//Посвящение друидов-медведей
+[Redc]
+Tip=Посвящение друидов-медведей (|cffffcc00L|r),Высшее посвящение друидов-медведей (|cffffcc00L|r)
+Hotkey=L,L
+
+//Рассеять чары
+[Resi]
+Tip=Рассеять чары (|cffffcc00S|r)
+Hotkey=S
+
+//Приручение гиппогрифов
+[Reht]
+Tip=Приручение гиппогрифов (|cffffcc00I|r) 
+Hotkey=I
+
+//Едкое дыхание
+[Recb]
+Tip=Едкое дыхание (|cffffcc00B|r)
+Hotkey=B
+
+//Стальные снаряды 
+[Repb]
+Tip=Стальные снаряды (|cffffcc00P|r)
+Hotkey=P
+
+//Защита от магии
+[Rers]
+Tip=Защита от магии (|cffffcc00T|r)
+Hotkey=T
+
+//Каменные доспехи
+[Rehs]
+Tip=Каменные доспехи (|cffffcc00H|r)
+Hotkey=H
+
+//Медвежий рев
+[Reeb]
+Tip=Медвежий рев (|cffffcc00M|r)
+Hotkey=M
+
+//Глаз ворона
+[Reec]
+Tip=Глаз ворона (|cffffcc00M|r)
+Hotkey=M
+
+//Лунный блик
+[Rews]
+Tip=Лунный блик (|cffffcc00E|r)
+Hotkey=E
+
+//Рюкзак
+[Repm]
+Tip=Рюкзак (|cffffcc00B|r)
+Hotkey=B
+
+//Съесть дерево
+[Aeat]
+Tip=Съесть дерево (|cffffcc00E|r)
+Hotkey=E
+
+//Пустить корни
+[Aroo]
+Tip=Пустить корни (|cffffcc00R|r)
+Hotkey=R
+"Untip=""Вытащить корни (|cffffcc00R|r)"""
+Unhotkey=R
+
+//Сторожевое Древо
+[etrp]
+Hotkey=P
+Tip=Сторожевое Древо (|cffffcc00P|r)
+
+//Древо Жизни
+[etol]
+Hotkey=T
+Tip=Древо Жизни (|cffffcc00T|r)
+
+//Оплести рудник
+[Aent]
+Tip=Оплести рудник (|cffffcc00G|r)
+Hotkey=G
+
+// Взять на борт (загрузка/разгрузка)
+[Aenc]
+Tip=Взять на борт (|cffffcc00L|r)
+Hotkey=L
+Untip=Выгрузить всех (|cffffcc00U|r)
+Unhotkey=U
+
+//Добывать золото
+[Slo2]
+Tip=Добывать золото (|cffffcc00L|r)
+Hotkey=L
+
+//Выгрузить всех (рудник)
+[Adri]
+Tip=Выгрузить всех (|cffffcc00U|r)
+Hotkey=U
+
+
+
+//Древо Долголетия
+[etoa]
+Hotkey=U
+Tip=Древо Долголетия (|cffffcc00U|r)
+
+//Древо Вечности
+[etoe]
+Hotkey=U
+Tip=Древо Вечности (|cffffcc00U|r)
+
+//Охотничий зал
+[edob]
+Hotkey=H
+Tip=Охотничий зал (|cffffcc00H|r)
+
+//Алтарь Старейших
+[eate]
+Hotkey=A
+Tip=Алтарь Старейших (|cffffcc00A|r)
+
+//Древо Мудрости
+[eaoe]
+Hotkey=L
+Tip=Древо Мудрости (|cffffcc00L|r)
+
+//Древо Войны
+[eaom]
+Hotkey=R
+Tip=Древо Войны (|cffffcc00R|r)
+
+//Древо Ветров
+[eaow]
+Hotkey=W
+Tip=Древо Ветров (|cffffcc00W|r)
+
+//Древо Чудес
+[eden]
+Hotkey=D
+Tip=Древо Чудес (|cffffcc00D|r)
+
+//Гнезда химер
+[edos]
+Hotkey=C
+Tip=Гнезда химер (|cffffcc00C|r)
+
+//Лунный колодец
+[emow]
+Hotkey=M
+Tip=Лунный колодец (|cffffcc00M|r)
+
+// Восстановить ману и здоровье
+[Ambt]
+Tip=Восстановить ману и здоровье (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//////////////////////////////
+//Ночные эльфы - герои
+//////////////////////////////
+
+//Охотник на Демонов
+[Edem]
+Hotkey=D
+Tip=Охотник на Демонов (|cffffcc00D|r)
+Revivetip=Воскресить Охотника на Демонов (|cffffcc00D|r)
+Awakentip=Воскресить Охотника на Демонов (|cffffcc00D|r)
+
+//Магический огонь
+[AEmb]
+"Tip=""Магический огонь, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Магический огонь, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Магический огонь, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+Hotkey=B
+"Researchtip=""Магический огонь, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+//Жар Преисподней
+[AEim]
+"Tip=""Жар Преисподней, [|cffffcc00Уровень 1|r] (|cffffcc00L|r)"",""Жар Преисподней, [|cffffcc00Уровень 2|r] (|cffffcc00L|r)"",""Жар Преисподней, [|cffffcc00Уровень 3|r] (|cffffcc00L|r)"""
+Hotkey=L
+"Untip=""Развеять ''Жар Преисподней'' (|cffffcc00L|r)."""
+Unhotkey=L
+"Researchtip=""Жар Преисподней, [|cffffcc00Уровень %d|r] (|cffffcc00L|r)"""
+Researchhotkey=L
+
+//Змеиная ловкость
+[AEev]
+"Tip=""Змеиная ловкость, [|cffffcc00Уровень 1|r]"",""Змеиная ловкость, [|cffffcc00Уровень 2|r]"",""Змеиная ловкость, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Змеиная ловкость, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Перевоплощение
+[AEme]
+Tip=Перевоплощение (|cffffcc00T|r)
+Hotkey=T
+"Researchtip=""Перевоплощение (|cffffcc00T|r)"""
+Researchhotkey=T
+
+//Хранитель рощи
+[Ekee]
+Hotkey=K
+Tip=Хранитель рощи (|cffffcc00K|r)
+Revivetip=Воскресить Хранителя Рощи (|cffffcc00K|r)
+Awakentip=Воскресить Хранителя Рощи (|cffffcc00K|r)
+
+//Гнев деревьев
+[AEer]
+"Tip=""Гнев деревьев, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Гнев деревьев, [|cffffcc00Уровень 2|r] (|cffffcc00E|r)"",""Гнев деревьев, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Гнев деревьев, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Сила природы
+[AEfn]
+"Tip=""Сила природы, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Сила природы, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Сила природы, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Сила природы, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Аура возмездия
+[AEah]
+"Tip=""Аура возмездия, [|cffffcc00Уровень 1|r]"",""Аура возмездия, [|cffffcc00Уровень 2|r]"",""Аура возмездия, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Аура возмездия, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+//Покой
+[AEtq]
+Tip=Покой (|cffffcc00T|r)
+Hotkey=T
+"Researchtip=""Покой (|cffffcc00T|r)"""
+Researchhotkey=T
+
+//Жрица Луны
+[Emoo]
+Hotkey=P
+Tip=Жрица Луны (|cffffcc00P|r)
+Revivetip=Воскресить Жрицу Луны (|cffffcc00P|r)
+Awakentip=Воскресить Жрицу Луны (|cffffcc00P|r)
+
+//Разведка
+[AEst]
+"Tip=""Разведка, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Разведка, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Разведка, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Разведка, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+//Огненные стрелы
+[AHfa]
+"Tip=""Огненные стрелы, [|cffffcc00Уровень 1|r] (|cffffcc00R|r)"",""Огненные стрелы, [|cffffcc00Уровень 2|r] (|cffffcc00R|r)"",""Огненные стрелы, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+"Researchtip=""Огненные стрелы, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+//Аура меткости
+[AEar]
+"Tip=""Аура меткости, [|cffffcc00Уровень 1|r]"",""Аура меткости, [|cffffcc00Уровень 2|r]"",""Аура меткости, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Аура меткости, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Researchhotkey=T
+
+//Звездопад
+[AEsf]
+Tip=Звездопад (|cffffcc00F|r)
+Hotkey=F
+"Researchtip=""Звездопад (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Смотрящая в Ночь
+[Ewar]
+Hotkey=W
+Tip=Смотрящая в Ночь (|cffffcc00W|r)
+Revivetip=Воскресить Смотрящую в Ночь (|cffffcc00W|r)
+Awakentip=Воскресить Смотрящую в Ночь (|cffffcc00W|r)
+
+//Скачок
+[AEbl]
+"Tip=""Скачок, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Скачок, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Скачок, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+Hotkey=B
+"Researchtip=""Скачок, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+//Веерный бросок
+[AEfk]
+"Tip=""Веерный бросок, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Веерный бросок, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Веерный бросок, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Веерный бросок, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Отравленный нож
+[AEsh]
+"Tip=""Отравленный нож, [|cffffcc00Уровень 1|r] (|cffffcc00D|r)"",""Отравленный нож, [|cffffcc00Уровень 2|r] (|cffffcc00D|r)"",""Отравленный нож, [|cffffcc00Уровень 3|r] (|cffffcc00D|r)"""
+Hotkey=D
+"Researchtip=""Отравленный нож, [|cffffcc00Уровень %d|r] (|cffffcc00D|r)"""
+Researchhotkey=D
+
+
+//Возмездие
+[AEsv]
+Tip=Возмездие (|cffffcc00V|r)
+Hotkey=V
+"Researchtip=""Возмездие (|cffffcc00V|r)"""
+Researchhotkey=V
+
+
+//Зов Возмездия
+[Avng]
+Tip=Зов Возмездия (|cffffcc00V|r)
+Hotkey=V
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+
+
+/////////////////////////////
+//Нежить - войска
+/////////////////////////////
+
+//Послушник
+[uaco]
+Tip=Послушник (|cffffcc00C|r)
+Hotkey=C
+
+//Рассеять здание
+[Auns]
+Tip=Рассеять здание (|cffffcc00U|r)
+Hotkey=U
+
+//Добывать ресурсы
+[Aaha]
+Tip=Добывать ресурсы (|cffffcc00G|r)
+"Untip=""Доставить добычу (|cffffcc00R|r)"""
+Hotkey=G
+Unhotkey=R
+
+//Обновление (ремонт здания)
+[Arst]
+Tip=Обновление (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//Мясник
+[uabo]
+Tip=Мясник (|cffffcc00A|r)
+Hotkey=A
+
+// Каннибализм (мясник)
+[Acn2]
+Tip=Каннибализм (|cffffcc00C|r)
+Hotkey=C
+
+//Банши
+[uban]
+Tip=Банши (|cffffcc00B|r)
+Hotkey=B
+
+// Проклятие
+[Acrs]
+Tip=Проклятие (|cffffcc00C|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=C
+Unhotkey=C
+
+//Защитная аура
+[Aams]
+Tip=Защитная аура (|cffffcc00N|r)
+Hotkey=N
+
+//Защитная аура
+[Aam2]
+Tip=Защитная аура (|cffffcc00N|r)
+Hotkey=N
+
+//Одержимость
+[Apos]
+Tip=Одержимость (|cffffcc00O|r)
+Hotkey=O
+
+//Одержимость
+[Aps2]
+Tip=Одержимость (|cffffcc00O|r)
+Hotkey=O
+
+//Могильщик
+[ucry]
+Tip=Могильщик (|cffffcc00F|r)
+Hotkey=F
+
+//Паутина
+[Aweb]
+Tip=Паутина (|cffffcc00W|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение."""
+Hotkey=W
+Unhotkey=W
+
+//Закопаться (могильщик)
+[Abur]
+Tip=Закопаться (|cffffcc00B|r)
+Untip=Выкопаться (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+//Ледяной змей
+[ufro]
+Tip=Ледяной змей (|cffffcc00F|r) 
+Hotkey=F
+
+//Горгулья
+[ugar]
+Tip=Горгулья (|cffffcc00A|r)
+Hotkey=A
+
+// Статуя
+[Astn]
+Tip=Статуя (|cffffcc00F|r)
+Hotkey=F
+"Untip=""Горгулья (|cffffcc00F|r)"""
+Unhotkey=F
+
+//Вурдалак
+[ugho]
+Tip=Вурдалак (|cffffcc00G|r)
+Hotkey=G
+
+// Каннибализм (вурдалак)
+[Acan]
+Tip=Каннибализм (|cffffcc00C|r)
+Hotkey=C
+
+//Некромант
+[unec]
+Tip=Некромант (|cffffcc00N|r)
+Hotkey=N
+
+//Оживить мертвых
+[Arai]
+Tip=Оживить мертвых (|cffffcc00R|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+
+//Ярость Проклятых
+[Auhf]
+Tip=Ярость Проклятых (|cffffcc00U|r)
+Hotkey=U
+
+//Увечье
+[Acri]
+Tip=Увечье (|cffffcc00C|r)
+Hotkey=C
+
+//Труповозка
+[umtw]
+Tip=Труповозка (|cffffcc00M|r)
+Hotkey=M
+
+//Погрузить труп
+[Amel]
+Tip=Погрузить труп (|cffffcc00C|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=C
+Unhotkey=C
+
+//Выгрузить все трупы
+[Amed]
+Tip=Выгрузить все трупы (|cffffcc00D|r)
+Hotkey=D
+
+//Обсидиановая статуя
+[uobs]
+Tip=Обсидиановая статуя (|cffffcc00O|r)
+Hotkey=O
+
+//Восстановление маны
+[Arpm]
+Tip=Восстановление маны (|cffffcc00C|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=C
+Unhotkey=C
+
+//Власть Порчи
+[Arpl]
+Tip=Власть Порчи (|cffffcc00B|r)
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=B
+Unhotkey=B
+
+//Превращение в сфинкса
+[ubsp]
+Tip=Превращение в сфинкса (|cffffcc00T|r)
+Hotkey=T
+
+//Сфера Небытия
+[Afak]
+"Tip=""Сфера Небытия (|cffffcc00O|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=O
+Unhotkey=O
+
+//Поглощение чар
+[Advm]
+"Tip=""Поглощение чар (|cffffcc00D|r)"""
+Hotkey=D
+
+
+//Поглощение маны
+[Aabs]
+"Tip=""Поглощение маны (|cffffcc00B|r)"""
+Hotkey=B
+
+
+/////////////////////////////
+//Нежить - здания и усовершенствования
+/////////////////////////////
+
+//Сфинкс
+[Rusp]
+Tip=Сфинкс (|cffffcc00T|r)
+Hotkey=T
+
+//Сила Проклятых
+[Rume]
+Tip=Сила Проклятых (|cffffcc00S|r),Древняя Сила Проклятых (|cffffcc00S|r),Великая Сила Проклятых (|cffffcc00S|r)
+Hotkey=S,S,S
+
+//Ярость
+[Rura]
+Tip=Ярость (|cffffcc00A|r),Зов войны (|cffffcc00A|r),Зов крови (|cffffcc00A|r)
+Hotkey=A,A,A
+
+//Мощь Проклятых
+[Ruar]
+Tip=Мощь Проклятых (|cffffcc00U|r), Древняя Мощь Проклятых (|cffffcc00U|r), Великая Мощь Проклятых (|cffffcc00U|r)
+Hotkey=U,U,U
+
+//Броня
+[Rucr]
+Tip=Броня (|cffffcc00C|r), Средняя броня (|cffffcc00C|r), Тяжелая броня (|cffffcc00C|r)
+Hotkey=C,C,C
+
+//Каннибализм
+[Ruac]
+Tip=Каннибализм (|cffffcc00C|r)
+Hotkey=C
+
+//Ярость вурдалака
+[Rugf]
+Tip=Ярость вурдалака (|cffffcc00Z|r)
+Hotkey=Z
+
+//Паутина
+[Ruwb]
+Tip=Паутина (|cffffcc00W|r)
+Hotkey=W
+
+//Статуя
+[Rusf]
+Tip=Статуя (|cffffcc00S|r)
+Hotkey=S
+
+//Посвящение некромантов
+[Rune]
+Tip=Посвящение некромантов (|cffffcc00E|r),Высшее посвящение некромантов (|cffffcc00E|r)
+Hotkey=E,E
+
+//Посвящение банши
+[Ruba]
+Tip=Посвящение банши (|cffffcc00A|r),Высшее посвящение банши (|cffffcc00A|r)
+Hotkey=A,A
+
+//Ледяное дыхание
+[Rufb]
+Tip=Ледяное дыхание (|cffffcc00B|R)
+Hotkey=B
+
+//Жизнь скелетов
+[Rusl]
+Tip=Жизнь скелетов (|cffffcc00S|r)
+Hotkey=S
+
+//Ядовитое облако
+[Rupc]
+Tip=Ядовитое облако (|cffffcc00D|r)
+Hotkey=D
+
+//Магия скелетов
+[Rusm]
+Tip=Магия скелетов (|cffffcc00M|r)
+Hotkey=M
+
+//Норы могильщиков
+[Rubu]
+Tip=Норы могильщиков (|cffffcc00B|r)
+Hotkey=B
+
+//Эксгумация
+[Ruex]
+Tip=Эксгумация (|cffffcc00E|r)
+Hotkey=E
+
+//Рюкзак
+[Rupm]
+EditorSuffix= (Undead)
+Tip=Рюкзак (|cffffcc00B|r)
+Hotkey=B
+
+//Костяной завод
+[ubon]
+Tip=Костяной завод (|cffffcc00B|r)
+Hotkey=B
+
+//Жертвенник
+[usap]
+Tip=Жертвенник (|cffffcc00S|r)
+Hotkey=S
+
+//Ритуальное самоубийство (послушник)
+[Alam]
+Tip=Ритуальное самоубийство (|cffffcc00C|r)
+Hotkey=C
+
+//Бойня
+[uslh]
+Tip=Бойня (|cffffcc00H|r)
+Hotkey=H
+
+//Кладбище
+[ugrv]
+Tip=Кладбище (|cffffcc00V|r)
+Hotkey=V
+
+//Алтарь Тьмы
+[uaod]
+Tip=Алтарь Тьмы (|cffffcc00A|r)
+Hotkey=A
+
+//Некрополь
+[unpl]
+Tip=Некрополь (|cffffcc00N|r)
+Hotkey=N
+
+//Чертоги Мертвых
+[unp1]
+Tip=Чертоги Мертвых (|cffffcc00U|r)
+Hotkey=U
+
+//Темная Цитадель
+[unp2]
+Tip=Темная Цитадель (|cffffcc00U|R)
+Hotkey=U
+
+//Склеп
+[usep]
+Tip=Склеп (|cffffcc00C|r)
+Hotkey=C
+
+//Храм Проклятых
+[utod]
+Tip=Храм Проклятых (|cffffcc00T|r)
+Hotkey=T
+
+//Древнее захоронение
+[utom]
+Hotkey=R
+Tip=Древнее захоронение (|cffffcc00R|r)
+
+//Проклятый рудник
+[ugol]
+Tip=Проклятый рудник (|cffffcc00G|r)
+Hotkey=G
+
+//Зиккурат
+[uzig]
+Tip=Зиккурат (|cffffcc00Z|r)
+Hotkey=Z
+
+//Башня Духов
+[uzg1]
+Tip=Башня Духов (|cffffcc00T|r)
+Hotkey=T
+
+//Башня Неруба
+[uzg2]
+Tip=Башня Неруба (|cffffcc00N|r)
+Hotkey=N
+
+/////////////////////////////
+//Нежить - герои
+/////////////////////////////
+
+//Повелитель Могил
+[Ucrl]
+Tip=Повелитель Могил (|cffffcc00C|r)
+Hotkey=C
+Revivetip=Воскресить Повелителя Могил (|cffffcc00C|r)
+Awakentip=Воскресить Повелителя Могил (|cffffcc00C|r)
+
+// Пронзающая Смерть
+[AUim]
+"Tip=""Пронзающая Смерть, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Пронзающая Смерть, [|cffffcc00Уровень 2|r] (|cffffcc00E|r)"",""Пронзающая Смерть, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Пронзающая Смерть, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Панцирь с шипами
+[AUts]
+"Tip=""Панцирь с шипами, [|cffffcc00Уровень 1|r]"",""Панцирь с шипами, [|cffffcc00Уровень 2|r]"",""Панцирь с шипами, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Панцирь с шипами, [|cffffcc00Уровень %d|r] (|cffffcc00S|r)"""
+Researchhotkey=S
+
+//Трупоеды
+[AUcb]
+"Tip=""Трупоеды, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Трупоеды, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Трупоеды, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Трупоеды, [|cffffcc00Уровень %d|r] (|cffffcc00С|r)"""
+Researchhotkey=C
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+
+// Закопаться (жук, ур. 2)
+[Abu2]
+Tip=Закопаться (|cffffcc00B|r)
+Untip=Выкопаться (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+// Закопаться (жук, ур. 3)
+[Abu3]
+Tip=Закопаться (|cffffcc00B|r)
+Untip=Выкопаться (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+//Москиты
+[AUls]
+Tip=Москиты (|cffffcc00L|r)
+Hotkey=L
+"Researchtip=""Москиты (|cffffcc00L|r)"""
+Researchhotkey=L
+
+//Рыцарь Смерти
+[Udea]
+Tip=Рыцарь Смерти (|cffffcc00D|r)
+Revivetip=Воскресить Рыцаря Смерти (|cffffcc00D|r)
+Awakentip=Воскресить Рыцаря Смерти (|cffffcc00D|r)
+Hotkey=D
+
+//Лик смерти
+[AUdc]
+"Tip=""Лик смерти, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Лик смерти, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Лик смерти, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Лик смерти, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+//Аура смерти
+[AUau]
+"Tip=""Аура смерти, [|cffffcc00Уровень 1|r]"",""Аура смерти, [|cffffcc00Уровень 2|r]"",""Аура смерти, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Аура смерти, [|cffffcc00Уровень %d|r] (|cffffcc00U|r)"""
+Researchhotkey=U
+
+//Смертельный союз
+[AUdp]
+"Tip=""Смертельный союз, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Смертельный союз, [|cffffcc00Уровень 2|r] (|cffffcc00E|r)"",""Смертельный союз, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Смертельный союз, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Гальванизация
+[AUan]
+Tip=Гальванизация (|cffffcc00D|r)
+Hotkey=D
+"Researchtip=""Гальванизация (|cffffcc00D|r)"""
+Researchhotkey=D
+
+//Повелитель Ужаса
+[Udre]
+Tip=Повелитель Ужаса (|cffffcc00E|r)
+Revivetip=Воскресить Повелителя Ужаса (|cffffcc00E|r)
+Awakentip=Воскресить Повелителя Ужаса (|cffffcc00E|r)
+Hotkey=E
+
+//Темная стая
+[AUcs]
+"Tip=""Темная стая, [|cffffcc00Уровень 1|r] (|cffffcc00C|r)"",""Темная стая, [|cffffcc00Уровень 2|r] (|cffffcc00C|r)"",""Темная стая, [|cffffcc00Уровень 3|r] (|cffffcc00C|r)"""
+Hotkey=C
+"Researchtip=""Темная стая, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+//Сон
+[AUsl]
+"Tip=""Сон, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Сон, [|cffffcc00Уровень 21|r] (|cffffcc00E|r)"",""Сон, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Сон, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Вампиризм
+[AUav]
+"Tip=""Вампиризм, [|cffffcc00Уровень 1|r]"",""Вампиризм, [|cffffcc00Уровень 2|r]"",""Вампиризм, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Вампиризм, [|cffffcc00Уровень %d|r] (|cffffcc00V|r)"""
+Researchhotkey=V
+
+//Огненный голем
+[AUin]
+Tip=Огненный голем (|cffffcc00N|r)
+Hotkey=N
+Researchtip=Огненный голем (|cffffcc00N|r)
+Researchhotkey=N
+
+//Король Мертвых
+[Ulic]
+Tip=Король Мертвых (|cffffcc00L|r)
+Revivetip=Воскресить Короля Мертвых (|cffffcc00L|r)
+Awakentip=Воскресить Короля Мертвых (|cffffcc00L|r)
+Hotkey=L
+
+//Ледяная звезда
+[AUfn]
+"Tip=""Ледяная звезда, [|cffffcc00Уровень 1|r] (|cffffcc00N|r)"",""Ледяная звезда, [|cffffcc00Уровень 2|r] (|cffffcc00N|r)"",""Ледяная звезда, [|cffffcc00Уровень 3|r] (|cffffcc00N|r)"""
+Hotkey=N
+"Researchtip=""Ледяная звезда, [|cffffcc00Уровень %d|r] (|cffffcc00N|r)"""
+Researchhotkey=N
+
+//Ледяная броня (Autocast, Lich)
+[AUfu]
+"Tip=""Ледяная броня, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Ледяная броня, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Ледяная броня, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=F
+"Researchtip=""Ледяная броня, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Темный ритуал
+[AUdr]
+"Tip=""Темный ритуал, [|cffffcc00Уровень 1|r] (|cffffcc00R|r)"",""Темный ритуал, [|cffffcc00Уровень 2|r] (|cffffcc00R|r)"",""Темный ритуал, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)"""
+Hotkey=R
+"Researchtip=""Темный ритуал, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+//Порча
+[AUdd]
+Tip=Порча (|cffffcc00D|r)
+Hotkey=D
+"Researchtip=""Порча (|cffffcc00D|r)"""
+Researchhotkey=D
+
+
+//////////////////////////////////////////////////////
+// Нейтральные - герои и возможности
+// В том числе вызываемые герои и их возможности
+// За исключением наемников
+//////////////////////////////////////////////////////
+
+/////////////////////
+// Королева Змей
+/////////////////////
+
+//Королева Змей
+[Nngs]
+Hotkey=G
+Tip=Королева Змей (|cffffcc00G|r)
+Revivetip=Воскресить Королеву Змей (|cffffcc00G|r)
+Awakentip=Воскресить Королеву Змей (|cffffcc00G|r)
+
+//Магический щит (Королева Змей)
+[ANms]
+"Tip=""Магический щит, [|cffffcc00Уровень 1|r] (|cffffcc00N|r)"",""Магический щит, [|cffffcc00Уровень 2|r] (|cffffcc00N|r)"",""Магический щит, [|cffffcc00Уровень 3|r] (|cffffcc00N|r)"""
+Untip=Развеять Магический щит (|cffffcc00N|r)
+Hotkey=N
+Unhotkey=N
+"Researchtip=""Магический щит, [|cffffcc00Уровень %d|r] (|cffffcc00N|r)"""
+Researchhotkey=N
+
+//Разветвленная молния (Королева Змей)
+[ANfl]
+"Tip=""Разветвленная молния, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Разветвленная молния, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Разветвленная молния, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Разветвленная молния, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Ледяные стрелы (Королева Змей)
+[ANfa]
+"Tip=""Ледяные стрелы, [|cffffcc00Уровень 1|r] (|cffffcc00R|r)"",""Ледяные стрелы, [|cffffcc00Уровень 2|r] (|cffffcc00R|r)"",""Ледяные стрелы, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=R
+Unhotkey=R
+"Researchtip=""Ледяные стрелы, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Торнадо (Королева Змей)
+[ANto]
+"Tip=""Торнадо, (|cffffcc00T|r)"""
+Hotkey=T
+"Researchtip=""Торнадо (|cffffcc00T|r)"""
+Researchhotkey=T
+
+/////////////////////
+// Разрушитель
+/////////////////////
+
+//Разрушитель
+[Nplh]
+Hotkey=I
+Tip=Разрушитель (|cffffcc00I|r)
+Revivetip=Воскресить Разрушителя (|cffffcc00I|r)
+Awakentip=Воскресить Разрушителя (|cffffcc00I|r)
+
+//Леденящий крик (Разрушитель)
+[ANht]
+"Tip=""Леденящий крик, [|cffffcc00Уровень 1|r] (|cffffcc00T|r)"",""Леденящий крик, [|cffffcc00Уровень 2|r] (|cffffcc00T|r)"",""Леденящий крик, [|cffffcc00Уровень 3|r] (|cffffcc00T|r)"""
+Hotkey=T
+"Researchtip=""Леденящий крик, [|cffffcc00Уровень %d|r] (|cffffcc00T|r)"""
+Researchhotkey=T
+
+//Огненный дождь (Разрушитель)
+[ANrf]
+"Tip=""Огненный дождь, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Огненный дождь, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Огненный дождь, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Огненный дождь, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Демоническая сила (Разрушитель)
+[ANca]
+"Tip=""Демоническая сила, [|cffffcc00Уровень 1|r]"",""Демоническая сила, [|cffffcc00Уровень 2|r]"",""Демоническая сила, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Демоническая сила, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+// Печать Преисподней (Разрушитель)
+[ANdo]
+Tip=Печать Преисподней (|cffffcc00D|r)
+Hotkey=D
+"Researchtip=""Печать Преисподней (|cffffcc00D|r)"""
+Researchhotkey=D
+
+
+////////////////////////////////
+// Пандарийский пивовар
+////////////////////////////////
+
+//Пандарийский пивовар
+[Npbm]
+Hotkey=N
+Tip=Пандарийский пивовар (|cffffcc00N|r)
+Revivetip=Воскресить пандарийского пивовара (|cffffcc00N|r)
+Awakentip=Воскресить пандарийского пивовара (|cffffcc00N|r)
+
+//Огненное дыхание (Пандарийский пивовар)
+[ANbf]
+"Tip=""Огненное дыхание, [|cffffcc00Уровень 1|r] (|cffffcc00F|r)"",""Огненное дыхание, [|cffffcc00Уровень 2|r] (|cffffcc00F|r)"",""Огненное дыхание, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)"""
+Hotkey=F
+"Researchtip=""Огненное дыхание, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+//Огненное дыхание (Пандарийский пивовар)
+[ANdb]
+"Tip=""Огненное дыхание, [|cffffcc00Уровень 1|r]"",""Пьяный мастер, [|cffffcc00Уровень 2|r]"",""Пьяный мастер, [|cffffcc00Уровень 3|r]"""
+"Researchtip=""Пьяный мастер, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+//Винные пары (Пандарийский пивовар)
+[ANdh]
+"Tip=""Винные пары, [|cffffcc00Уровень 1|r] (|cffffcc00D|r)"",""Винные пары, [|cffffcc00Уровень 2|r] (|cffffcc00D|r)"",""Винные пары, [|cffffcc00Уровень 3|r] (|cffffcc00D|r)"""
+Hotkey=D
+"Researchtip=""Винные пары, [|cffffcc00Уровень %d|r] (|cffffcc00D|r)"""
+Researchhotkey=D
+
+//Три стихии (Пандарийский пивовар)
+[ANef]
+"Tip=""Три стихии (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Три стихии (|cffffcc00E|r)"""
+Researchhotkey=E
+
+
+//////////////////////
+//Пандарийский пивовар (три стихии)
+//////////////////////
+
+// Стремительность (воздух)
+[ANwk]
+Tip=Стремительность (|cffffcc00W|r)
+Hotkey=W
+
+"// Смерч (воздух; общая с другими существами)"
+[ACcy]
+Tip=Смерч (|cffffcc00C|r)
+Hotkey=C
+
+"//Рассеять чары (воздух; общая с другими существами)"
+[Adsm]
+Tip=Рассеять чары (|cffffcc00D|r)
+Hotkey=D
+
+// Оскорбление (земля)
+[ANta]
+Tip=Оскорбление (|cffffcc00T|r)
+Hotkey=T
+
+
+////////////////////////
+//Повелитель Зверей
+////////////////////////
+
+//Повелитель Зверей
+[Nbst]
+Hotkey=S
+Tip=Повелитель Зверей (|cffffcc00S|r)
+Revivetip=Воскресить Повелителя Зверей (|cffffcc00S|r)
+Awakentip=Воскресить Повелителя Зверей (|cffffcc00S|r)
+
+// Медведь(Повелитель Зверей)
+[ANsg]
+"Tip=""Медведь, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Медведь, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Медведь, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+Hotkey=B
+"Researchtip=""Медведь, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Кабан (Повелитель Зверей)
+[ANsq]
+"Tip=""Кабан, [|cffffcc00Уровень 1|r] (|cffffcc00Q|r)"",""Кабан, [|cffffcc00Уровень 2|r] (|cffffcc00Q|r)"",""Кабан, [|cffffcc00Уровень 3|r] (|cffffcc00Q|r)"""
+Hotkey=Q
+"Researchtip=""Кабан, [|cffffcc00Уровень %d|r] (|cffffcc00Q|r)"""
+Researchhotkey=Q
+
+// Ястреб (Повелитель Зверей)
+[ANsw]
+"Tip=""Ястреб, [|cffffcc00Уровень 1|r] (|cffffcc00W|r)"",""Ястреб, [|cffffcc00Уровень 2|r] (|cffffcc00W|r)"",""Ястреб, [|cffffcc00Уровень 3|r] (|cffffcc00W|r)"""
+Hotkey=W
+"Researchtip=""Сокол, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Researchhotkey=W
+
+// Стадо ящериц (Повелитель Зверей)
+[ANst]
+Tip=Стадо ящериц (|cffffcc00T|r)
+Hotkey=T
+Researchtip=Стадо ящериц (|cffffcc00T|r)
+Researchhotkey=T
+
+// Blink (медведь)
+[ANbl]
+Hotkey=B
+Tip=Скачок (|cffffcc00B|r)
+
+
+///////////////////////
+// Темная Охотница
+///////////////////////
+
+[Nbrn]
+Hotkey=R
+Tip=Темная Охотница (|cffffcc00R|r)
+Revivetip=Воскресить Темную Охотницу (|cffffcc00R|r)
+Awakentip=Воскресить Темную Охотницу (|cffffcc00R|r)
+
+// Черная стрела (Темная Охотница)
+[ANba]
+"Tip=""Черная стрела, [|cffffcc00Уровень 1|r] (|cffffcc00B|r)"",""Черная стрела, [|cffffcc00Уровень 2|r] (|cffffcc00B|r)"",""Черная стрела, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)"""
+"Untip=""|cffc3dbffЩелкните правой кнопкой мыши, чтобы разрешить автоматическое применение.|r"""
+Hotkey=B
+"Researchtip=""Черная стрела, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Безмолвие (Темная Охотница)
+[ANsi]
+"Tip=""Безмолвие, [|cffffcc00Уровень 1|r] (|cffffcc00E|r)"",""Безмолвие, [|cffffcc00Уровень 2|r] (|cffffcc00E|r)"",""Безмолвие, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)"""
+Hotkey=E
+"Researchtip=""Безмолвие, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+//Похищение жизни  (Темная Охотница)
+[ANdr]
+"Tip=""Похищение жизни, [|cffffcc00Уровень 1|r] (|cffffcc00D|r)"",""Похищение жизни, [|cffffcc00Уровень 2|r] (|cffffcc00D|r)"",""Похищение жизни, [|cffffcc00Уровень 3|r] (|cffffcc00D|r)"""
+Hotkey=D
+"Researchtip=""Похищение жизни, [|cffffcc00Уровень %d|r] (|cffffcc00D|r)"""
+Researchhotkey=D
+
+//Подчинение (Темная Охотница)
+[ANch]
+Tip=Подчинение (|cffffcc00C|r)
+Hotkey=C
+Researchtip=Подчинение (|cffffcc00C|r)
+Researchhotkey=C
+
+
+///////////////////////
+// Механик
+///////////////////////
+
+// Механик
+[Ntin]
+Tip=Механик (|cffffcc00Z|r)
+Hotkey=Z
+Revivetip=Воскресить механика (|cffffcc00Z|r)
+Awakentip=Воскресить механика (|cffffcc00Z|r)
+
+// Механик (облик кибергоблина)
+[Nrob]
+Tip=Механик (|cffffcc00Z|r)
+Hotkey=Z
+Revivetip=Воскресить механика (|cffffcc00Z|r)
+Awakentip=Воскресить механика (|cffffcc00Z|r)
+
+// Мини-завод
+[ANsy]
+Tip=Мини-завод, [|cffffcc00Уровень 1|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 2|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)
+Hotkey=F
+"Researchtip=""Мини-завод, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Мини-завод
+[ANs1]
+Tip=Мини-завод, [|cffffcc00Уровень 1|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 2|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)
+Hotkey=F
+"Researchtip=""Мини-завод, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Мини-завод
+[ANs2]
+Tip=Мини-завод, [|cffffcc00Уровень 1|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 2|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)
+Hotkey=F
+"Researchtip=""Мини-завод, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Мини-завод
+[ANs3]
+Tip=Мини-завод, [|cffffcc00Уровень 1|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 2|r] (|cffffcc00F|r),Мини-завод, [|cffffcc00Уровень 3|r] (|cffffcc00F|r)
+Hotkey=F
+"Researchtip=""Мини-завод, [|cffffcc00Уровень %d|r] (|cffffcc00F|r)"""
+Researchhotkey=F
+
+// Ракетный удар
+[ANcs]
+Tip=Ракетный удар, [|cffffcc00Уровень 1|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 2|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)
+Hotkey=R
+"Researchtip=""Ракетный удар, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Ракетный удар
+[ANc1]
+Tip=Ракетный удар, [|cffffcc00Уровень 1|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 2|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)
+Hotkey=R
+"Researchtip=""Ракетный удар, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Ракетный удар
+[ANc2]
+Tip=Ракетный удар, [|cffffcc00Уровень 1|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 2|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)
+Hotkey=R
+"Researchtip=""Ракетный удар, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Ракетный удар
+[ANc3]
+Tip=Ракетный удар, [|cffffcc00Уровень 1|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 2|r] (|cffffcc00R|r),Ракетный удар, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)
+Hotkey=R
+"Researchtip=""Ракетный удар, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Техника
+[ANeg]
+Tip=Техника, [|cffffcc00Уровень 1|r],Техника, [|cffffcc00Уровень 2|r],Техника, [|cffffcc00Уровень 3|r]
+Hotkey=E
+"Researchtip=""Техника, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+// Превратиться в кибергоблина
+[ANrg]
+"Tip=""Превратиться в кибергоблина (|cffffcc00B|r)"""
+Hotkey=B
+"Untip=""Превратиться в механика (|cffffcc00T|r)"""
+Unhotkey=T
+"Researchtip=""Кибергоблин (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Превратиться в кибергоблина
+[ANg1]
+"Tip=""Превратиться в кибергоблина (|cffffcc00B|r)"""
+Hotkey=B
+"Untip=""Превратиться в механика (|cffffcc00T|r)"""
+Unhotkey=T
+"Researchtip=""Кибергоблин (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Превратиться в кибергоблина
+[ANg2]
+"Tip=""Превратиться в кибергоблина (|cffffcc00B|r)"""
+Hotkey=B
+"Untip=""Превратиться в механика (|cffffcc00T|r)"""
+Unhotkey=T
+"Researchtip=""Кибергоблин (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Robo-Goblin
+[ANg3]
+"Tip=""Превратиться в кибергоблина (|cffffcc00B|r)"""
+Hotkey=B
+"Untip=""Превратиться в механика (|cffffcc00T|r)"""
+Unhotkey=T
+"Researchtip=""Кибергоблин (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Разгром
+[ANde]
+"Tip=""Разгром"""
+Hotkey=
+
+// Разгром
+[ANd1]
+"Tip=""Разгром, уровень 1"""
+Hotkey=
+
+// Разгром
+[ANd2]
+"Tip=""Разгром, уровень 2"""
+Hotkey=
+
+// Разгром
+[ANd3]
+"Tip=""Разгром, уровень 3"""
+Hotkey=
+
+[ANfy]
+"Tip=""Завод"""
+Hotkey=
+
+[ANf1]
+"Tip=""Завод, уровень 1"""
+Hotkey=
+
+[ANf2]
+"Tip=""Завод, уровень 2"""
+Hotkey=
+
+[ANf3]
+"Tip=""Завод, уровень 3"""
+Hotkey=
+
+// Tip=Взорвать (заводной гоблин, уровень 1)
+[Asdg]
+Tip=Взорвать (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+// Взорвать (заводной гоблин, уровень 2)
+[Asd2]
+Tip=Взорвать (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+// Взорвать (заводной гоблин, уровень 3)
+[Asd3]
+Tip=Взорвать (|cffffcc00B|r)
+Hotkey=B
+Unhotkey=B
+
+
+///////////////////////
+// Алхимик
+///////////////////////
+
+//Алхимик
+[Nalc]
+Hotkey=X
+Tip=Алхимик (|cffffcc00X|r)
+Revivetip=Воскресить алхимика (|cffffcc00X|r)
+Awakentip=Воскресить алхимика (|cffffcc00X|r)
+
+//Алхимик
+[Nalm]
+Hotkey=X
+Tip=Алхимик (|cffffcc00X|r)
+Revivetip=Воскресить алхимика (|cffffcc00X|r)
+Awakentip=Воскресить алхимика (|cffffcc00X|r)
+
+//Алхимик (облик 2)
+[Nal2]
+Hotkey=X
+Tip=Алхимик (|cffffcc00X|r)
+Revivetip=Воскресить алхимика (|cffffcc00X|r)
+Awakentip=Воскресить алхимика (|cffffcc00X|r)
+
+//Алхимик (облик 3)
+[Nal3]
+Hotkey=X
+Tip=Алхимик (|cffffcc00X|r)
+Revivetip=Воскресить алхимика (|cffffcc00X|r)
+Awakentip=Воскресить алхимика (|cffffcc00X|r)
+
+// Исцеляющий газ
+[ANhs]
+Tip=Исцеляющий газ, [|cffffcc00Уровень 1|r] (|cffffcc00E|r),Исцеляющий газ, [|cffffcc00Уровень 2|r] (|cffffcc00E|r),Исцеляющий газ, [|cffffcc00Уровень 3|r] (|cffffcc00E|r)
+Hotkey=E
+"Researchtip=""Исцеляющий газ, [|cffffcc00Уровень %d|r] (|cffffcc00E|r)"""
+Researchhotkey=E
+
+// Кислотная бомба
+[ANab]
+Tip=Кислотная бомба, [|cffffcc00Уровень 1|r] (|cffffcc00B|r),Кислотная бомба, [|cffffcc00Уровень 2|r] (|cffffcc00B|r),Кислотная бомба, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)
+Hotkey=B
+"Researchtip=""Кислотная бомба, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Эликсир ярости
+[ANcr]
+Tip=Эликсир ярости, [|cffffcc00Уровень 1|r] (|cffffcc00R|r),Эликсир ярости, [|cffffcc00Уровень 2|r] (|cffffcc00R|r),Эликсир ярости, [|cffffcc00Уровень 3|r] (|cffffcc00R|r)
+Hotkey=R
+"Researchtip=""Эликсир ярости, [|cffffcc00Уровень %d|r] (|cffffcc00R|r)"""
+Researchhotkey=R
+
+// Трансмутация
+[ANtm]
+"Tip=""Трансмутация (|cffffcc00T|r)"""
+Hotkey=T
+"Researchtip=""Трансмутация (|cffffcc00T|r)"""
+Researchhotkey=T
+
+
+///////////////////////
+// Повелитель Огня
+///////////////////////
+
+[Nfir]
+Hotkey=O
+Tip=Повелитель Огня (|cffffcc00O|r)
+Revivetip=Воскресить Повелителя Огня (|cffffcc00O|r)
+Awakentip=Воскресить Повелителя Огня (|cffffcc00O|r)
+
+// Оживший огонь
+[ANic]
+Tip=Оживший огонь, [|cffffcc00Уровень 1|r],Оживший огонь, [|cffffcc00Уровень 2|r],Оживший огонь, [|cffffcc00Уровень 3|r]
+Hotkey=C
+"Researchtip=""Оживший огонь, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"""
+Researchhotkey=C
+
+// Оживший огонь (Arrow)
+[ANia]
+Tip=Оживший огонь, [|cffffcc00Уровень 1|r],Оживший огонь, [|cffffcc00Уровень 2|r],Оживший огонь, [|cffffcc00Уровень 3|r]
+Hotkey=C
+"Researchtip=""Оживший огонь, [|cffffcc00Уровень %d|r] (|cffffcc00C|r)"
+Researchhotkey=C
+
+// Пламя Обреченности
+[ANso]
+Tip=Пламя Обреченности, [|cffffcc00Уровень 1|r] (|cffffcc00B|r),Пламя Обреченности, [|cffffcc00Уровень 2|r] (|cffffcc00B|r),Пламя Обреченности, [|cffffcc00Уровень 3|r] (|cffffcc00B|r)
+Hotkey=B
+"Researchtip=""Пламя Обреченности, [|cffffcc00Уровень %d|r] (|cffffcc00B|r)"""
+Researchhotkey=B
+
+// Тварь из Недр
+[ANlm]
+Tip=Тварь из Недр, [|cffffcc00Уровень 1|r] (|cffffcc00W|r),Тварь из Недр, [|cffffcc00Уровень 2|r] (|cffffcc00W|r),Тварь из Недр, [|cffffcc00Уровень 3|r] (|cffffcc00W|r)
+Hotkey=W
+"Researchtip=""Тварь из Недр, [|cffffcc00Уровень %d|r] (|cffffcc00W|r)"""
+Researchhotkey=W
+
+// Вулкан
+[ANvc]
+"Tip=""Вулкан (|cffffcc00V|r)"""
+Hotkey=V
+"Researchtip=""Вулкан (|cffffcc00V|r)"""
+Researchhotkey=V
