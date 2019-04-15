@@ -36,9 +36,9 @@ class Book(models.Model):
         (("f","fetnesy"),
          ( "h","horror"),
         ( "d","detetive"),
-    ("c","comedy"),
-    ("b","biograhpi"))
-    )
+        ("c","comedy"),
+        ("b","biograhpi"))
+        )
     genre = models.CharField(max_length=50, choices=genre_list)
     def __str__(self):
         return "Назва : %s" % self.name

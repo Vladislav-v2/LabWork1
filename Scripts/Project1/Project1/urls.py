@@ -26,4 +26,5 @@ urlpatterns = [
     #path('',include('application1.urls')),
     #path('App1/',include('App1.urls')),
     path('admin/', admin.site.urls),
+    path('appdatabase/',include('appdatabase.urls'))
 ]

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'appdatabase.apps.AppdatabaseConfig',
     'applicationmodels.apps.ApplicationmodelsConfig',
     'application3_1.apps.Application31Config',
     'application4.apps.Application4Config',
