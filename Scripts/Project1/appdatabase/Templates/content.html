@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Humans</h1>
+
+  <h2>Всі працівники</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans %}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+{%endfor%}
+</table>
+<h2>Перших 3 працівника</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans%}
+      {%if forloop.counter0 < 3%}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+      {%endif%}
+{%endfor%}
+</table>
+  <h2>Ті,  хто працюють в Epam</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans%}
+      {%if human.company == "ep"%}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+      {%endif%}
+{%endfor%}
+</table>
+  <h2>Працівники народжені у 2000 році</h2>
+<table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans%}
+     {%if human.birth|date:"Y" == "2000" %}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth|date:"Y"}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+    {%endif%}
+{%endfor%}
+</table>
+<h2>Перший доданий працівник</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans%}
+     {%if human.id == 1 %}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+    {%endif%}
+{%endfor%}
+</table>
+<h2>Працівники, впорядковані по даті народження по спаданню</h2>
+    <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in sort_humans_birth%}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+{%endfor%}
+</table>
+<h2>Працівники із ЗП менше 1000</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{%for human in humans%}
+      {%if human.salary < 1000 %}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+      {%endif%}
+{%endfor%}
+</table>
+<h2>Всі працівники відсортовані по зарплаті</h2>
+  <table>
+      <tbody>
+      <tr>
+          <th  class="cell">Name</th>
+          <th  class="cell">Surname</th>
+          <th  class="cell">Birthday</th>
+          <th  class="cell">Company</th>
+          <th  class="cell">position</th>
+          <th  class="cell">Language</th>
+          <th  class="cell">Salary</th>
+      </tr>
+      </tbody>
+{% for human in sort_humans_salary %}
+      <tr>
+      <td> {{human.name}}</td>
+      <td>{{human.surname}}</td>
+      <td> {{human.birth}}</td>
+      <td>{{human.company}}</td>
+      <td> {{human.position}}</td>
+      <td>{{human.language}}</td>
+      <td> {{human.salary}}</td>
+      </tr>
+{%endfor%}
+</table>
+  <form action="{% url 'search_list'%}" method="post">
+      {% csrf_token %}
+    <div class="input-group">
+        <input id="id" name="company" type="text" class="form-control" placeholder="Поиск">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">Search</button>
+        </span>
+    </div>
+</form>
+
+  <style>
+          tbody{
+              display: table-row-group;
+              vertical-align: middle;
+              border-color: indigo;
+          }
+          tr{
+               display: table-row;
+              vertical-align: inherit;
+              border-color: indigo;
+          }
+          th{
+              background-color:deepskyblue ;
+              text-align:left;
+          }
+      </style>
+</body>
+</html>
